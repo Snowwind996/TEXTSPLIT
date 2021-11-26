@@ -1,7 +1,7 @@
 # 机器学习代码
 ## 更新于2021.11.26
 如何使用我的代码？ 
-1. 打开`data.py`，修改第24,25行代码
+1. 打开`data.py`，修改第24,25行代码，改成你的数据集/测试集路径
     ```python
             datapath=".\\data\\train.csv"
             testpath=".\\data\\test.csv"
@@ -13,6 +13,13 @@
     其中`id`是样本的序列号，`content`是新闻的文本内容。`comment_all`是这个新闻的所有评论。`label`是新闻真假的标签。其中有3个标签。-1是假新闻，0是不相关，1是真新闻。
 
 2. 打开`Bert_train.ipynb`或者`NaiveBayes.ipynb`，运行代码即可。
+3. 或者直接将以下文件导入kaggle，打开GPU模式，设置好路径之后运行：
+   ```
+   split_dataset
+   split_testset
+   kaggle_bertversion.ipynb
+   ```
+   本段代码在kaggle上跑了大概2个小时，仅仅只有5个iteration，懒得再更新了。
 
 
 
