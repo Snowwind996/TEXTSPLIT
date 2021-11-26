@@ -10,3 +10,7 @@ venv/
 ._split_testset
 ._test.csv
 ._train.csv
+.idea/
+.vscode/
+__pycache__/
+
