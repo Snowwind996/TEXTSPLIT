@@ -21,10 +21,10 @@ class preprocess():
         import re
         import pickle
         import os
-        datapath=".\\data\\train.csv"
-        testpath=".\\data\\test.csv"
-        retdata=".\\data\\train"
-        rettest=".\\data\\test"
+        datapath="/data/train.csv"
+        testpath="/data/test.csv"
+        retdata="/data/train"
+        rettest="/data/test"
         if (os.path.exists(retdata)):
             dataset2=open(retdata,'rb')
             dataset=pickle.load(dataset2)
@@ -77,8 +77,6 @@ class preprocess():
                 str1 = ' '.join(seq)
                 dataset2.append(str1)
             return dataset2
-
-
         labelset=label_get(dataset)
         testset_list=pd_li_transform(testset)
         dataset_list=pd_li_transform(dataset)
